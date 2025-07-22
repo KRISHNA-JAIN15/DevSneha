@@ -17,9 +17,13 @@ mongoose.connect(process.env.MONGO_URI, {
 const cors = require("cors");
 
 app.use(cors({
-  origin: process.env.CLIENT_URL || "http://localhost:5137",
+  origin: [
+    process.env.CLIENT_URL || "http://localhost:5173", // local frontend
+    "https://dev-sneha.vercel.app"                     // deployed frontend
+  ],
   credentials: true
 }));
+
 
 
 const userRoutes = require("./routes/user");
