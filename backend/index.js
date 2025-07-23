@@ -21,7 +21,9 @@ app.use(cors({
     process.env.CLIENT_URL || "http://localhost:5173", // local frontend
     "https://dev-sneha.vercel.app"                     // deployed frontend
   ],
-  credentials: true
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 
