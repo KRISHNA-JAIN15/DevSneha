@@ -100,8 +100,9 @@ exports.postSignin = async (req, res) => {
 
         res.cookie('token', token, {
             httpOnly: true,
-            sameSite: 'Lax',
-            secure: false,
+            sameSite: 'none', // Allow cross-origin requests
+            secure: true,     // Required when sameSite is 'none' and for HTTPS
+            maxAge: 24 * 60 * 60 * 1000 // Optional: set expiration (24 hours)
         });
 
         return res.status(200).json({
