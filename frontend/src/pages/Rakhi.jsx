@@ -12,6 +12,7 @@ function Rakhi() {
   const [editingProduct, setEditingProduct] = useState(null);
   const [deleteConfirmId, setDeleteConfirmId] = useState(null);
   const [actionLoading, setActionLoading] = useState('');
+  import { useNavigate } from 'react-router-dom';
   const [editForm, setEditForm] = useState({
     title: '',
     description: '',
@@ -23,6 +24,8 @@ function Rakhi() {
   const [message, setMessage] = useState({ type: '', text: '' });
   
   const productsPerPage = 8;
+
+  const navigate = useNavigate();
   
   // Get user from Redux store
   const { user } = useSelector((state) => state.auth);
@@ -52,7 +55,7 @@ function Rakhi() {
       setActionLoading(productId);
       const response = await axios.delete(`/${productId}`);
       
-      if (!response.ok) {
+      if(response.status !== 200) {
         throw new Error('Failed to delete product');
       }
       
@@ -63,6 +66,8 @@ function Rakhi() {
       
       // Clear message after 3 seconds
       setTimeout(() => setMessage({ type: '', text: '' }), 3000);
+
+      navigate('/');
       
     } catch (error) {
       console.error('Error deleting product:', error);
