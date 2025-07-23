@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { IndianRupee, ChevronLeft, ChevronRight, Loader2, Package, AlertCircle, X, Edit, Trash2, Save, Upload, FileText, Tag, ImageIcon, CheckCircle } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import axios from "../api/product";
+import { useNavigate } from 'react-router-dom';
 
 function Rakhi() {
   const [products, setProducts] = useState([]);
@@ -12,7 +13,6 @@ function Rakhi() {
   const [editingProduct, setEditingProduct] = useState(null);
   const [deleteConfirmId, setDeleteConfirmId] = useState(null);
   const [actionLoading, setActionLoading] = useState('');
-  import { useNavigate } from 'react-router-dom';
   const [editForm, setEditForm] = useState({
     title: '',
     description: '',
