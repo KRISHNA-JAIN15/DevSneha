@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { IndianRupee, ChevronLeft, ChevronRight, Loader2, Package, AlertCircle, X, Edit, Trash2, Save, Upload, FileText, Tag, ImageIcon, CheckCircle } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import axios from "../api/product";
+import { useNavigate } from 'react-router-dom'; 
 
 function Vastra() {
   const [products, setProducts] = useState([]);
@@ -21,7 +22,7 @@ function Vastra() {
   });
   const [editImagePreview, setEditImagePreview] = useState(null);
   const [message, setMessage] = useState({ type: '', text: '' });
-  
+  const navigate = useNavigate();
   const productsPerPage = 8;
   
   // Get user from Redux store
@@ -52,7 +53,7 @@ function Vastra() {
       setActionLoading(productId);
       const response = await axios.delete(`/${productId}`);
       
-      if (!response.ok) {
+      if (response.status !== 200) {
         throw new Error('Failed to delete product');
       }
       
@@ -63,7 +64,7 @@ function Vastra() {
       
       // Clear message after 3 seconds
       setTimeout(() => setMessage({ type: '', text: '' }), 3000);
-      
+      navigate('/');
     } catch (error) {
       console.error('Error deleting product:', error);
       setMessage({ type: 'error', text: 'Failed to delete product.' });
