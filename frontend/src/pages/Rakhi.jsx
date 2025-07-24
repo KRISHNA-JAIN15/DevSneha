@@ -646,4 +646,4 @@ function Rakhi() {
   );
 }
 
-export default ;
+export default Rakhi;
