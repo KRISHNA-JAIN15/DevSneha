@@ -62,7 +62,7 @@ const Navbar = () => {
 
                         {isAuthenticated && (
                             <>
-                                <Link to="/rakhi" className={navLinkClass}>Rakhi</Link>
+                                <Link to="/rakhi" className={navLinkClass}>Accessories</Link>
                                 <Link to="/vastra" className={navLinkClass}>Vastra</Link>
 
                                 {user?.role === 'admin' && (
@@ -158,7 +158,7 @@ const Navbar = () => {
                                     className={mobileNavLinkClass}
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
-                                    🎀 Rakhi
+                                    🎀 Accessories
                                 </Link>
                                 <Link
                                     to="/vastra"
