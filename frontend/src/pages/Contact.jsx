@@ -51,7 +51,7 @@ const Contact = () => {
           {/* Location */}
           <div className="flex items-center justify-center space-x-4 fade-in-up animation-delay-[1200ms]">
             <MapPin className="text-blue-400 drop-shadow" size={28} />
-            <p className="text-lg font-medium text-gray-300">Paramount Symphony , Crossing Republik</p>
+            <p className="text-lg font-medium text-gray-300">Paramount Symphony , Crossing Republik , Ghaziabad</p>
           </div>
         </div>
       </div>
