@@ -21,19 +21,19 @@ const Contact = () => {
           {/* Name */}
           <div className="fade-in-up animation-delay-300">
             <p className="text-2xl font-semibold text-blue-400 mb-1 drop-shadow-md">
-              Your Name
+              Ashika Jain
             </p>
-            <p className="text-gray-300 text-lg">John Doe</p>
+{/*             <p className="text-gray-300 text-lg">John Doe</p> */}
           </div>
 
           {/* Phone */}
           <div className="flex items-center justify-center space-x-4 fade-in-up animation-delay-600 hover:text-blue-500 transition-colors cursor-pointer">
             <Phone className="text-blue-400 drop-shadow" size={28} />
             <a
-              href="tel:+15551234567"
+              href="tel:+918527803591"
               className="text-white text-lg font-medium underline decoration-blue-600 hover:decoration-blue-400"
             >
-              +1 (555) 123-4567
+              +91 8527803591
             </a>
           </div>
 
@@ -41,17 +41,17 @@ const Contact = () => {
           <div className="flex items-center justify-center space-x-4 fade-in-up animation-delay-900 hover:text-blue-500 transition-colors cursor-pointer">
             <Mail className="text-blue-400 drop-shadow" size={28} />
             <a
-              href="mailto:john.doe@example.com"
+              href="mailto:multitalentedmahi@gmail.com"
               className="text-white text-lg font-medium underline decoration-blue-600 hover:decoration-blue-400"
             >
-              john.doe@example.com
+              multitalentedmahi@gmail.com
             </a>
           </div>
 
           {/* Location */}
           <div className="flex items-center justify-center space-x-4 fade-in-up animation-delay-[1200ms]">
             <MapPin className="text-blue-400 drop-shadow" size={28} />
-            <p className="text-lg font-medium text-gray-300">San Francisco, CA, USA</p>
+            <p className="text-lg font-medium text-gray-300">Paramount Symphony , Crossing Republik</p>
           </div>
         </div>
       </div>
