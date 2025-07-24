@@ -159,7 +159,7 @@ const Home = () => {
             <div className="flex items-center justify-center space-x-2 mb-6">
               <Star className="w-6 h-6 text-yellow-300 animate-spin" />
               <span className="text-yellow-300 font-semibold tracking-widest uppercase text-sm">
-                Welcome Back
+                Welcome !!!
               </span>
               <Star className="w-6 h-6 text-yellow-300 animate-spin" />
             </div>
@@ -185,7 +185,8 @@ const Home = () => {
             <div className="flex flex-wrap justify-center gap-6 mb-8">
               <div className="backdrop-blur-sm bg-white/10 rounded-2xl px-6 py-3 border border-white/20">
                 <div className="text-2xl font-bold">
-                  {rakhiProducts.length + vastraProducts.length}+
+{/*                   {rakhiProducts.length + vastraProducts.length}+ */}
+                  50+
                 </div>
                 <div className="text-sm text-purple-200">Products</div>
               </div>
@@ -327,10 +328,10 @@ const Home = () => {
             >
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
               <div className="relative z-10">
-                <div className="text-6xl mb-4">🪔</div>
-                <h3 className="text-3xl font-bold mb-2">Rakhi Collection</h3>
+                <div className="text-6xl mb-4">🪬</div>
+                <h3 className="text-3xl font-bold mb-2">Accessories Collection</h3>
                 <p className="text-orange-100 mb-6">
-                  Traditional rakhis for the sacred bond
+                  Celebrate traditions with graceful accessories
                 </p>
                 <div className="flex items-center text-white font-semibold">
                   <span>Explore Collection</span>
