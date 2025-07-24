@@ -43,7 +43,7 @@ function Rakhi() {
       setProducts(response.data);
       setError('');
     } catch (error) {
-      console.error('Error fetching rakhi products:', error);
+      console.error('Error fetching products:', error);
       setError('Failed to load products. Please try again later.');
     } finally {
       setLoading(false);
@@ -193,7 +193,7 @@ function Rakhi() {
       <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50 flex items-center justify-center">
         <div className="text-center">
           <Loader2 className="w-12 h-12 text-orange-500 animate-spin mx-auto mb-4" />
-          <p className="text-gray-600 font-medium">Loading Rakhi Collection...</p>
+          <p className="text-gray-600 font-medium">Loading Accessories Collection...</p>
         </div>
       </div>
     );
@@ -223,10 +223,10 @@ function Rakhi() {
       <div className="bg-gradient-to-r from-orange-500 to-red-500 py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            🪔 Rakhi Collection
+            🪔 Traditional Accessories Collection
           </h1>
           <p className="text-orange-100 text-lg md:text-xl max-w-2xl mx-auto">
-            Discover our beautiful collection of traditional and modern rakhis to celebrate the bond of love
+            Discover our beautiful collection of traditional and festive accessories to celebrate every bond and occasion.
           </p>
           <div className="mt-6 text-white/90">
             <span className="inline-flex items-center gap-2">
@@ -260,7 +260,7 @@ function Rakhi() {
         {products.length === 0 ? (
           <div className="text-center py-16">
             <Package className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-gray-600 mb-2">No Rakhis Found</h3>
+            <h3 className="text-xl font-semibold text-gray-600 mb-2">No Product Found</h3>
             <p className="text-gray-500">Check back soon for new arrivals!</p>
           </div>
         ) : (
@@ -453,7 +453,7 @@ function Rakhi() {
                             {product.price.toLocaleString('en-IN')}
                           </div>
                           <span className="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded-full font-medium">
-                            Rakhi
+                            Accessories
                           </span>
                         </div>
 
@@ -628,7 +628,7 @@ function Rakhi() {
                 </div>
                 
                 <span className="inline-block bg-orange-100 text-orange-700 px-3 py-1 rounded-full font-medium text-sm mb-6">
-                  Rakhi
+                  Accessories
                 </span>
                 
                 <button
@@ -646,4 +646,4 @@ function Rakhi() {
   );
 }
 
-export default Rakhi;
+export default ;
