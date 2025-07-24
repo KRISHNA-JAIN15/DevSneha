@@ -14,8 +14,10 @@ const About = () => {
               Divine Collections
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90 text-purple-300">
+{/*               Bringing sacred traditions and divine blessings to your doorstep through 
+              exquisite God Vastra and beautiful seasonal Rakhis. */}
               Bringing sacred traditions and divine blessings to your doorstep through 
-              exquisite God Vastra and beautiful seasonal Rakhis.
+              exquisite God Vastra and timeless traditional accessories.
             </p>
           </div>
         </div>
@@ -35,14 +37,17 @@ const About = () => {
               Our Divine Journey
             </h2>
             <p className="text-lg text-purple-300 mb-6 leading-relaxed">
-              Rooted in devotion and crafted with love, our collection celebrates the rich 
-              spiritual heritage of India. We specialize in authentic God Vastra that adorns 
-              deities with dignity and grace, and handcrafted Rakhis that symbolize the 
-              eternal bond of love and protection.
+              Welcome to Devsneha, your trusted home for devotional elegance and divine creations.
+              We specialize in beautifully handcrafted Laddu Gopal Ji Vastra, accessories, and festive 
+              decor items designed to elevate your spiritual space with love and devotion.
             </p>
             <p className="text-lg text-purple-300 leading-relaxed">
-              Every piece in our catalogue is carefully selected to bring divine blessings 
-              and joy to your sacred spaces and celebrations.
+{/*               Every piece in our catalogue is carefully selected to bring divine blessings 
+              and joy to your sacred spaces and celebrations. */}
+              At Devsneha, each product is a reflection of traditional craftsmanship blended with pure bhakti. 
+              From daily darshan attire to festival-themed outfits and decor, our collection is made to honor 
+              the divine presence of Laddu Gopal Ji in your home.
+
             </p>
           </div>
           <div className="bg-white/10 backdrop-blur-md rounded-3xl p-10 shadow-2xl">
@@ -73,9 +78,9 @@ const About = () => {
                 <h3 className="text-2xl font-bold text-purple-100 mb-4">Sacred God Vastra</h3>
                 <ul className="text-purple-300 space-y-2 text-left">
                   <li>• Exquisite silk and cotton garments for deities</li>
-                  <li>• Traditional dhoti, kurta, and saree collections</li>
+                  <li>• Elegant collections and traditional ensembles</li>
                   <li>• Seasonal festival wear and special occasion attire</li>
-                  <li>• Custom embroidery and personalization options</li>
+                  <li>• Intricate detailing and culturally inspired patterns</li>
                   <li>• Premium quality fabrics with authentic designs</li>
                 </ul>
               </div>
@@ -85,13 +90,13 @@ const About = () => {
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl transition-shadow duration-300 hover:shadow-2xl">
               <div className="text-center">
                 <Gift className="text-pink-500 mx-auto mb-4" size={48} />
-                <h3 className="text-2xl font-bold text-purple-100 mb-4">Seasonal Rakhi Collection</h3>
+                <h3 className="text-2xl font-bold text-purple-100 mb-4">Traditional Accessories Collection</h3>
                 <ul className="text-purple-300 space-y-2 text-left">
-                  <li>• Handcrafted traditional and designer Rakhis</li>
-                  <li>• Eco-friendly and sustainable materials</li>
+                  <li>• Traditional Rakhis and festive essentials</li>
+                  <li>• Decorative items for Diwali and other occasions</li>
                   <li>• Kids' cartoon and themed Rakhi sets</li>
-                  <li>• Premium gift hampers and combinations</li>
-                  <li>• International shipping for global families</li>
+                  <li>• Festive gift sets and spiritual items</li>
+                  <li>• Ethnic decor to enrich your celebrations</li>
                 </ul>
               </div>
             </div>
