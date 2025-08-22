@@ -19,7 +19,8 @@ const cors = require("cors");
 app.use(cors({
   origin: [
     process.env.CLIENT_URL || "http://localhost:5173", // local frontend
-    "https://dev-sneha.vercel.app"                     // deployed frontend
+    "https://dev-sneha.vercel.app" ,                    // deployed frontend
+    "https://devsneha.krishnajain.tech"
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
